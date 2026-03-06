@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Airflow
+airflow.db
+airflow.cfg
+logs/
+*.log
+
+# dbt
+lab2_dbt_airflow_elt/build_ELT/target/
+lab2_dbt_airflow_elt/build_ELT/logs/
+lab2_dbt_airflow_elt/build_ELT/dbt_packages/
+lab2_dbt_airflow_elt/build_ELT/.user.yml
+lab2_dbt_airflow_elt/build_ELT/.dbt/
+lab2_dbt_airflow_elt/build_ELT/profiles.yml
+
+# Secrets / env files
+.env
+.env.*
+*.key
+*.pem

@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stock_calcs
+    description: "Model for calculating stock metrics, including moving averages and RSI."
+    columns:
+      - name: date
+        description: "The date of the stock record."
+        tests:
+          - not_null
+          - unique
+
+      - name: symbol
+        description: "The stock ticker symbol (e.g., AAPL, IBM)."
+        tests:
+          - not_null
+
+      - name: moving_avg_7d
+        description: "7-day moving average of the closing price."
+        tests:
+          - not_null
+
+      - name: rsi_14d
+        description: "14-day Relative Strength Index (RSI) value."
+        tests:
+          - not_null

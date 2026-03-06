@@ -1,0 +1,12 @@
+# Query: 
+# ContextLines: 1
+
+version: 2
+
+sources:
+  - name: raw_data
+    tables:
+      - name: stock_prices
+        description: "Stock prices table with raw data from Snowflake"
+        database: stock_db
+        schema: raw_data
